@@ -16,3 +16,23 @@ def productExceptSelf(nums):
     # didnt work for edge cases
 nums = [1,2,3,4]
 productExceptSelf(nums)
+
+"""
+arraypre=[1]*len(nums)
+        arraypost=[1]*len(nums)
+        answer =[]
+        #list of prefix
+        prefix = 1
+        for i in range(len(nums)):
+            arraypre[i] = prefix 
+            prefix *=nums[i]
+        
+        suffix = 1
+        for i in range(len(nums)-1,-1,-1):
+            arraypost[i] = suffix
+            suffix *= nums[i]
+            
+        for i in range(len(nums)):
+            answer.append(arraypre[i]*arraypost[i])
+        return answer
+        """
