@@ -22,7 +22,11 @@ class Solution:
                     sortedlist.append(k+1)
                 if k-1 in noDups:
                     noDups.remove(k-1)
-                    sortedlist.append(k+1)z
+                    sortedlist.append(k+1)
+            if len(sortedlist) > maxlength: 
+                maxlength = len(sortedlist)
+            sortedlist = [] 
+        print(maxlength)
 
                 #after u do this, save hte lenght of this sorted list, and clear it and go again 
 
