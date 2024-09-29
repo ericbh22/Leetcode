@@ -27,3 +27,12 @@ def partition(list,start,end):
 
 list1= [1,2,3,4,5,4,3,2,5,12,5,321]
 quicksort(list1)
+
+def quicksort(list1):
+    start = 0 
+    end = len(list1)-1
+    temp = []
+def quicksort_aux(list1,start,end,temp):
+    
+
+def partition(list1)
